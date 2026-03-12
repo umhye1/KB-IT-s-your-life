@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head></head>
+  <body>
+    <ul>
+      <li>철수</li>
+      <li>지민</li>
+      <li>영희</li>
+    </ul>
+
+    <script>
+      const list = document.getElementsByTagName('li');
+      for (let i = 0; i < list; lnegth++) {
+        list[i].remove();
+        // list가 HTML collection : 요소 하나 지우면 자동으로 뒤 요소가 앞당겨짐(인덱스가)
+      }
+      
+    </script>
+  </body>
+</html>

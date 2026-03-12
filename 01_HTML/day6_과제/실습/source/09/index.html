@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <body>
+    <div id="box">
+      Hello <span>World</span
+      ><!-- 주석입니다 -->
+    </div>
+
+    <script>
+      const div = document.getElementById('box');
+
+      console.log(div.nodeType);
+      console.log(div.childNodes);
+      console.log(div.childNodes[0].nodeType);
+      console.log(div.childNodes[1].nodeType);
+      console.log(div.childNodes[2].nodeType);
+
+      console.log(div.attributes);
+      console.log(div.attributes[0].name);
+      console.log(div.attributes[0].value);
+
+      div.getAttribute('id');
+      div.getAttribute('id', 'newBox');
+
+      const box = document.getElementById('box');
+
+      console.log(box.childNodes);
+      console.log(box.attributes);
+      console.log(box.getAttribute('id'));
+      console.dir(box);
+    </script>
+  </body>
+</html>

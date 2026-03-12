@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <div id="container">
+      <p>첫 번째 단락</p>
+      <p>두 번째 단락</p>
+    </div>
+
+    <script>
+      const tags1 = document.getElementsByTagName('p'); // HTML collection
+      const tags2 = document.querySelectorAll('p'); // NodeList(2)
+
+      // 둘다 <p> 태그 2개 선택, 실제로 반환된 객체의 타입은 다름
+      const newP = document.createElement('p');
+      newP.textContent = '세 번째';
+      document.getElementById('container').appendChild(newP);
+
+      console.log(tags1.length); // HTML collection: DOM 변경되지마자 변경. 실시간으로 변화 감지, 반영
+      console.log(tags2.length); // NodeList : 처음 선택했던 상태를 유지
+    </script>
+  </body>
+</html>

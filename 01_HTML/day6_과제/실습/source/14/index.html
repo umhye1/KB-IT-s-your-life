@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">첫 번째 박스</div>
+    <div class="box">두 번째 박스</div>
+    <div class="box">세 번째 박스</div>
+
+    <script>
+      // class 명으로 여러 요소 선택 (.class명)
+      const boxes = document.querySelectorAll('.box');
+
+      boxes.forEach((box) => {
+        box.style.border = '2px solid red';
+      });
+      const highlightedItems = document.querySelectorAll('#list .highlight');
+
+      // querySelectorAll()은 조건에 맞는 모든 요소 즉시 한번만 선택
+      // getElementsByClassName()은 자동으로 최신상태 반영
+      const dynamicItems = document.getElementsByClassName('dynamic');
+
+      //속성 지원자 선택자
+      const inputs = document.querySelectorAll("input[type ='text']");
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <p>메인 영역입니다.</p>
+    </div>
+
+    <h1>DOM 완전 정복</h1>
+    <h1>또 다른 제목</h1>
+
+    <div id="container">
+      <p class="highlighted">강조된 텍스트</p>
+      <p>일반 텍스트</p>
+    </div>
+
+    <div id="menu">
+      <a href="#">첫 번째 링크</a>
+      <a href="#">두 번째 링크</a>
+    </div>
+
+    <button class="btn">제출</button>
+
+    <script>
+      const button = document.querySelector('.btn');
+
+      const title = document.querySelector('h1');
+
+      const item = document.querySelector('#container .hilighted');
+
+      const section = document.getElementById('menu');
+      const firstLink = section.querySelector('a');
+
+      console.dir(document.querySelector('.btn'));
+
+      // querySelector()은 가장 먼저 일치하는 요소 하나만 반환함
+      // 일치하는 요소가 없을 경우 반환값 null.
+
+      // 조건문으로 존재 여부 먼저 확인하기!
+      const result = document.querySelector('.something');
+      if (result !== null) {
+        result.style.color = 'blue';
+      }
+    </script>
+  </body>
+</html>
