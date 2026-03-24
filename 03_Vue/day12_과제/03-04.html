@@ -1,0 +1,18 @@
+<!-- 사용자의 입력을 양방향으로 바인딩되도록 다음 코드를 완성하세요. -->
+<!-- v-model 디렉티브 -->
+
+<div id="app">
+  <input type="text" v-model="name" />
+  <br />
+  입력한 값: <span>{{name}}</span>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+  let vm = Vue.createApp({
+    name: 'App',
+    data() {
+      return { name: '' };
+    },
+  }).mount('#app');
+</script>

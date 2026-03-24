@@ -1,17 +1,16 @@
-<script setup>
-  import Tire from "./Tire.vue";
-
+<script>
+import Tire from './Tire.vue';
 </script>
 
 <template>
   <div class="rear-wheel">
     <span>Rear Wheel</span>
-    <Tire color="YELLOW"/>
+    <Tire color="YELLOW" />
   </div>
 </template>
 
 <style scoped>
-.rear-wheel{
+.rear-wheel {
   display: flex;
   justify-content: center;
   flex-direction: column;

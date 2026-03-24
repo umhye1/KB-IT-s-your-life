@@ -1,0 +1,26 @@
+<!-- v-bind 디렉티브
+요소의 속성을 바인딩
+속성값을 문자열이 아닌 javascript 표현식으로 처리 
+단방향
+vue 인스턴스의 데이터나 속성 바뀌면 UI 갱신
+화면의 바인딩된 요소에서 값을 변경해도 데이터 변경 x
+ -->
+
+<div id="app">
+  <input type="text" v-bind:value="message" />
+  <br />
+  <!-- <img v-bind:src="imagePath" /> -->
+</div>
+
+<!-- cdn -->
+<script src="https://unpkg.com/vue"></script>
+<script>
+  let vm = Vue.createApp({
+    name: 'App',
+    data() {
+      return {
+        message: 'v-bind 디렉티브',
+      };
+    },
+  }).mount('#app');
+</script>
